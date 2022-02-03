@@ -1,0 +1,130 @@
+*{ 
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    --dark_red: #8B0000;
+}
+
+
+.bande-sup{
+    background-image: url("img/top_bg.png");
+    height: 52px;
+    
+}
+
+.container{
+    margin: 0 20vw;
+}
+
+
+
+.logo{
+    height: 300px;
+    background-image: url("img/flash_img.png")
+}
+
+ul{
+    list-style-type: none;
+    display: flex;
+    justify-content:space-between;
+    background-color: var(--dark_red);
+    text-align: center;
+    
+}
+
+
+
+a{  
+    display: block;
+    text-decoration: none;
+    color: #FFF;
+    font-size: 20px;
+    transition: 0.5s ease-in; 
+    padding: 10px;
+}
+
+a:hover{
+    background-image: url("img/rings.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    transition: 0.5s ease-in; 
+}
+
+
+.grid1{
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr;
+    grid-column-gap: 10px;
+}
+
+
+
+.grid1{
+    margin: 40px 0;
+}
+
+.grid1 h4{
+    margin: 20px 0;
+}
+
+.grid1 h2, .grid1 p{
+    margin-bottom: 10px;
+}
+
+.grid1 h2, .grid1 h5{
+    color: var(--dark_red);
+}
+
+.grid1 img{
+    width: 100%;
+}
+
+main > h4, main >p{
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.grid2{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    grid-column-gap: 10px;
+    margin-bottom: 20px;
+}
+
+.grid2 .image img{
+    width: 100%;
+    height: 100%;
+}
+
+footer{
+    background-image: url("img/foot_bg.png");
+    height: 200px;
+}
+
+
+@media screen and (max-width: 900px){
+    .container{
+        margin: 0 10vw;
+    }
+
+    a{
+        font-size: 1rem;
+    }
+}
+
+
+@media screen and (max-width: 600px){
+    .container{
+        margin: 0 3vw;
+    }
+    .logo{
+        height: 200px;
+    }
+
+    
+
+    
+}
